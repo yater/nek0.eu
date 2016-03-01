@@ -1,0 +1,276 @@
+body {
+	color: black;
+	font-size: 16px;
+	font-family: 'Didact Gothic'; 
+	font-weight: normal; 
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+a:link {
+	color: green;
+}
+a:visited {
+	color: darkgreen;
+}
+
+img {
+	float: right;
+	margin: 10px;
+	width: 66%;
+	max-width: 500px;
+}
+
+hr {
+	color: black;
+	border: 0;
+	background-color: black;
+	height: 2px;
+}
+
+header {
+	padding: 20px;
+}
+
+header a {
+	color: darkgreen;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+header a:visited {
+	color: darkgreen;
+}
+
+article {
+	text-align: left;
+	padding: 20px;
+	margin-left: 200px;
+	overflow: auto;
+}
+
+article a:hover{
+	text-decoration: underline;
+}
+
+article ul{
+	list-style: none;
+}
+
+article li:before {
+	display: inline-block;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMzYzIDg3N2wtNzQyIDc0MnEtMTkgMTktNDUgMTl0LTQ1LTE5bC0xNjYtMTY2cS0xOS0xOS0xOS00NXQxOS00NWw1MzEtNTMxLTUzMS01MzFxLTE5LTE5LTE5LTQ1dDE5LTQ1bDE2Ni0xNjZxMTktMTkgNDUtMTl0NDUgMTlsNzQyIDc0MnExOSAxOSAxOSA0NXQtMTkgNDV6Ii8+PC9zdmc+);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	width: 1.5ex;
+	height: 1.5ex;
+}
+
+article li {
+	text-indent: -2ex;
+	margin-left: 1.5ex;
+}
+
+nav {
+	position: fixed;
+	width: 200px;
+}
+
+.navigation, .tagcloud {
+	background-color: rgba(0,0,0,0.1);
+	background: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tagcloud {
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.navigation {	
+	padding-right: 10px;
+}
+
+/*nav .tagcloud a:visited {
+	color:darkgreen;
+}
+
+nav .tagcloud a:link {
+	color:green;
+}*/
+
+nav ul{
+	text-align:right;
+	list-style: none;
+	margin-left: 0px;
+}
+
+nav li a:link {
+	color: darkgreen;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav li a:visited {
+	color: darkgreen;
+}
+
+footer {
+	position: relative;
+	color: #555;
+	font-size: 12px;
+	text-align: right;
+	clear: both;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+footer span {
+	padding-left: 40px;
+}
+
+footer span img {
+	vertical-align: bottom;
+}
+
+footer img {
+	float: none;
+	margin: 0;
+	width: 16px;
+}
+
+pre {
+	border: dashed 1px #000000;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.05);
+	background: rgba(0, 0, 0, 0.05);
+	padding: 10px;
+}
+
+pre code {
+	border: none;
+	font-size: 14px;	
+	background: transparent;
+	background-color: transparent;
+}
+
+pre code:before {
+	content: attr(class);
+	position: relative;
+	float: right;
+	display: block;
+	color: white;
+	font-weight: bolder;
+	text-shadow: 0px 0px 3px black;
+}
+
+code {
+	font-size: 14px;
+	background: rgba(0, 0, 0, 0.05);
+	background-color: rgba(0, 0, 0, 0.05);
+	border: dashed 1px #000000;
+	border-radius: 5px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.bitcoin {
+	display: inline-block;
+	margin-bottom: -2px;
+	fill: currentColor;
+}
+
+.pagination {
+	display: inline-block;
+	width: 100%;
+}
+
+.left, .right {
+	float: left;
+	margin-left: 25%;
+	display: inline-block;
+	fill: currentColor;
+}
+
+.left svg, .right svg {
+	margin-bottom: -3px;
+}
+
+.info {
+	color: #555;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.wrapper {
+	flex: 1;
+}
+
+.hidden a:link{
+	color: gray;
+}
+
+.hidden a:visited{
+	color: gray;
+}
+
+.feed{
+	display: inline-block;
+	margin-bottom: -2px;
+	fill: currentColor;
+}
+
+@media screen and (max-width: 600px){
+	nav{
+		position: relative;
+		width: auto;
+		height: auto;
+		text-align: center;
+	}
+	nav ul{
+		text-align: center;
+		padding-left: 0;
+	}
+	nav li{
+		display: inline-block;
+	}
+	article {
+		margin: 0;
+	}
+	img {
+	float: right;
+	margin: 10px;
+	padding-left: 100%;
+	width: 230px;
+	}
+}

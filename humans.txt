@@ -1,0 +1,13 @@
+/* TEAM */
+Me: nek0
+Email: nek0@nek0.eu
+Location: Germany
+
+/* THANKS */
+Jasper van der Jeugt: jaspervdj.be
+
+/* SITE */
+Standards: HTML5, CSS3,
+Components: plain old Html
+Software: Hakyll, nginx
+IDE: vim

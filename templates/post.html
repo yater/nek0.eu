@@ -1,0 +1,45 @@
+<div class="info">
+	Posted on $date$
+	$if(author)$
+		by $author$
+	$endif$
+	$if(tags)$
+		in $tags$
+	$endif$
+</div>
+
+$body$
+
+<div class="pagination">
+	$if(previousPageNum)$
+		<a class="left" href="$previousPageUrl$"><svg width="1em" height="1em" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 896v128q0 53-32.5 90.5t-84.5 37.5h-704l293 294q38 36 38 90t-38 90l-75 76q-37 37-90 37-52 0-91-37l-651-652q-37-37-37-90 0-52 37-91l651-650q38-38 91-38 52 0 90 38l75 74q38 38 38 91t-38 91l-293 293h704q52 0 84.5 37.5t32.5 90.5z"/></svg>previous post</a>
+	$endif$
+	$if(nextPageNum)$
+		<a class="right" href="$nextPageUrl$">next post<svg width="1em" height="1em" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293h-704q-52 0-84.5-37.5t-32.5-90.5v-128q0-53 32.5-90.5t84.5-37.5h704l-293-294q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"/></svg></a>
+	$endif$
+</div>
+
+<object id="yacs" seamless data="https://yacs.nek0.eu/comments/$title$"><p>If you see this, something is wrong</p></object>
+<script src="https://yacs.nek0.eu/static/js/yacs.js"></script>
+
+<!--
+<script type="text/javascript">
+	var slice = Array.prototype.slice;
+	document.addEventListener("DOMContentLoaded", function () {
+		slice.call(document.getElementsByTagName("object")).forEach(function (obj) {
+			var src = obj.getAttribute("data");
+			var request = new XMLHttpRequest();
+			request.onload = function () {
+				window.foo = this.responseXML;
+				slice.call(this.responseXML.body.children).forEach(function (child) {
+					obj.parentNode.insertBefore(child);
+				});
+				obj.remove();
+			};
+			request.open("GET", src);
+			request.responseType = "document";
+			request.send();
+		});
+	});
+</script>
+-->
