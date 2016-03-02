@@ -15,6 +15,8 @@ main = do
 
   hakyllWith config $ do
 
+    match "templates/*" $ compile templateCompiler
+
     --copy fonts, images etc.
     match ("font/*" .||. "images/*" .||. "humans.txt" .||. "D7665688.txt" .||. "robots.txt")  $ do
       route   idRoute
@@ -70,18 +72,9 @@ main = do
         loadAndApplyTemplate "templates/default.html" baseCtx full
           >>= relativizeUrls
 
-    -- match "posts/*.md" $ do
-    --   route $ setExtension "html"
-    --   compile $ pandocCompiler $ do
-    --     saveSnapshot "content"
-    --     loadAndApplyTemplate "templates/post.html" (postCtx tags)
-    --     loadAndApplyTemplate "templates/default.html" baseCtx
-    --     relativizeUrls
-
     -- Post tags
     tagsRules tags $ \tag pattern -> do
       let title = "Posts tagged " ++ tag ++ ":"
-
       -- Copied from posts, need to refactor
       route idRoute
       compile $ do
