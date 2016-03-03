@@ -15,6 +15,6 @@ Here are my latest Posts:
 
 $partial("templates/post-list.html")$
 
-...and there are even more in the [archive][archive].
+…and there are even more in the [archive][archive].
 
 [archive]: /archive.html
