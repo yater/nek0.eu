@@ -46,7 +46,7 @@ main = do
           >>= loadAndApplyTemplate "templates/default.html" baseCtx
           >>= relativizeUrls
 
-    match "about.md" $ do
+    match (fromList ["about.md", "imprint.md", "contact.md"]) $ do
       route   $ setExtension "html"
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" baseCtx
@@ -56,18 +56,6 @@ main = do
       route   $ setExtension "html"
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" baseCtx
-
-    match "imprint.md" $ do
-      route $ setExtension "html"
-      compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/default.html" baseCtx
-        >>= relativizeUrls
-
-    match "contact.md" $ do
-      route   $ setExtension "html"
-      compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/default.html" baseCtx
-        >>= relativizeUrls
 
     pages <- buildPaginateWith
       (return . map return . sort)
