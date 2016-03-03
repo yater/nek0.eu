@@ -33,6 +33,19 @@ main = do
     let baseCtx = tagCloudField "tagcloud" 80.0 200.0 tags <>
                 defaultContext
 
+    match "index.md" $ do
+      route idRoute
+      compile $ do
+        posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
+        let indexCtx = listField "posts" (postCtx tags) (return posts) <>
+                       constField "title" "Home" <>
+                       field "tags" (\_ -> renderTagCloud 85.0 300.0 tags) <>
+                       defaultContext
+        getResourceBody >>= myPandoc
+          >>= applyAsTemplate indexCtx
+          >>= loadAndApplyTemplate "templates/default.html" baseCtx
+          >>= relativizeUrls
+
     match "about.md" $ do
       route   $ setExtension "html"
       compile $ pandocCompiler
@@ -97,19 +110,6 @@ main = do
         makeItem ""
           >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
           >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-          >>= relativizeUrls
-
-    match "index.html" $ do
-      route idRoute
-      compile $ do
-        posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
-        let indexCtx = listField "posts" (postCtx tags) (return posts) <>
-                       constField "title" "Home" <>
-                       field "tags" (\_ -> renderTagCloud 85.0 300.0 tags) <>
-                       defaultContext
-        getResourceBody
-          >>= applyAsTemplate indexCtx
-          >>= loadAndApplyTemplate "templates/default.html" baseCtx
           >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
