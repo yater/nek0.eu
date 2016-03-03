@@ -66,7 +66,7 @@ main = do
     paginateRules pages $ \num _ -> do
       route $ setExtension "html"
       compile $ do
-        compiled <- getResourceBody >>= myPandoc
+        compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
         let ctx = (postCtx tags) <> pageCtx
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
@@ -154,9 +154,3 @@ config :: Configuration
 config = defaultConfiguration
   { deployCommand = "rsync --del --checksum -ave 'ssh -p 5555' \\_site/* nek0@chelnok.de:/home/nek0/www/blog"
   }
-
---------------------------------------------------------------------------------
-
-myPandoc :: Item String -> Compiler (Item String)
-myPandoc item = do
-  renderPandocWith defaultHakyllReaderOptions defaultHakyllWriterOptions item
