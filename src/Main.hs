@@ -41,8 +41,9 @@ main = do
                        constField "title" "Home" <>
                        field "tags" (\_ -> renderTagCloud 85.0 300.0 tags) <>
                        defaultContext
-        getResourceBody >>= myPandoc
+        getResourceBody
           >>= applyAsTemplate indexCtx
+          >>= renderPandoc
           >>= loadAndApplyTemplate "templates/default.html" baseCtx
           >>= relativizeUrls
 
