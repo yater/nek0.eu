@@ -34,7 +34,7 @@ main = do
                 defaultContext
 
     match "index.md" $ do
-      route idRoute
+      route $ setExtension "html"
       compile $ do
         posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
         let indexCtx = listField "posts" (postCtx tags) (return posts) <>
