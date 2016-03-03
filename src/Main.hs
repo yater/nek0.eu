@@ -131,6 +131,7 @@ main = do
           >>= renderRss feedConf feedCtx
 
 --------------------------------------------------------------------------------
+
 postCtx :: Tags -> Context String
 postCtx tags = mconcat
   [ modificationTimeField "mtime" "%U"
@@ -140,6 +141,7 @@ postCtx tags = mconcat
   ]
 
 --------------------------------------------------------------------------------
+
 feedCtx :: Context String
 feedCtx = mconcat
   [ bodyField "description"
