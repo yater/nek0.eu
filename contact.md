@@ -3,7 +3,7 @@ title: Contact
 ---
 
 If you have any comments on posts, this site or anything else, feel free to contact me at:
-**<nek0@nek0.eu>**. The associated PGP-Key has the ID [0xD7665688][key].
+**<nek0@nek0.eu>**. My PGP-Key has the ID [0xD7665688][key].
 I will gladly reply to your mails as soon as possible.
 
 Furthermore You can contact me via [Jabber/XMPP][jabber] at the address
