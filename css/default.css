@@ -236,14 +236,6 @@ h2 {
 	flex: 1;
 }
 
-.hidden a:link{
-	color: gray;
-}
-
-.hidden a:visited{
-	color: gray;
-}
-
 .feed{
 	display: inline-block;
 	margin-bottom: -2px;
