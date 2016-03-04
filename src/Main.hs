@@ -39,7 +39,6 @@ main = do
         posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
         let indexCtx = listField "posts" (postCtx tags) (return posts) <>
                        constField "title" "Home" <>
-                       field "tags" (\_ -> renderTagCloud 85.0 300.0 tags) <>
                        defaultContext
         getResourceBody
           >>= applyAsTemplate indexCtx
