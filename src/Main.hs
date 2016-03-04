@@ -144,7 +144,7 @@ feedConf = FeedConfiguration
   , feedDescription = "Random things"
   , feedAuthorName = "nek0"
   , feedAuthorEmail = "nek0@nek0.eu"
-  , feedRoot = "http://nek0.eu"
+  , feedRoot = "https://nek0.eu"
   }
 
 --------------------------------------------------------------------------------
