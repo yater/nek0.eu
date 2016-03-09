@@ -29,8 +29,8 @@ ich den Inhalt meines Buches preisgeben. Dadurch bin ich wohl gezwungen Fragment
 oder sehr wenig mit meinem Buch zu tun haben, um sie dann (hoffentlich konstruktiven) Kritiken
 auszusetzen.
 
-Es werden also in Zukunft unter der Kategorie "writing" Textfragmente und kurze Geschichten
-veröffentlicht, bei denen ich mich sehr um konstruktive Kritiken freuen würde. Das kann in der
+Es werden also in Zukunft unter dem Tag ["writing"](/tags/writing.html) Textfragmente und kurze
+Geschichten veröffentlicht, bei denen ich mich sehr um konstruktive Kritiken freuen würde. Das kann in der
 Kommentarfunktion zu dem jeweiligen Blogeintrag erfolgen, oder über direkten
 [Kontakt zu mir](/contact.html). Ich bedanke mich schon an dieser Stelle bei allen, die sich dafür die
 Zeit nehmen.
