@@ -5,7 +5,7 @@ tags: deutsch, writing
 description: Ein schwieriges Thema, wie ich finde.
 ---
 
-Wie versprochen führe ich hier meine Posts pber das Schreiben weiter. Diesmal mit einem Schwierigerem
+Wie versprochen führe ich hier meine Posts über das Schreiben weiter. Diesmal mit einem Schwierigerem
 Thema.
 
 Ich tue mich schwer mit der Namensfindung von Chrakteren in meinen Geschichten. Sehr lange überlege ich
