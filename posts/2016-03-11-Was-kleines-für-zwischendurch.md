@@ -16,11 +16,12 @@ senkte. Seine Gedanken waren bei einer Aspirintablette als er das Taschentuch au
 Arbeit am nächsten Mülleimer entsorgen wollte. Nur Beiläufig warf er einen Kurzen Blick darauf, bevor er
 es in den Schlund des Mülleimers werfen wollte, da sah er es.  
 Es war ein kleines schwarzes Quadrat, das da inmitten von Rotz und Schnodder im Taschentuch klebte.
-Sofort blieb er stehen. Neugier hatte ihn gepackt. Sorgfältig betrachtete er seinen Auswurf und was darin
-eingebettet war. Das kleine kleine Quadrat hatte zu allen vier Seiten kleine silbrig glänzende Beinchen,
-von denen sich feine blutige Schlieren durch den klaren Rotz zogen. Es war zweifelsohne ein Mikrochip.  
-Wo kam dieser her? Der konnte unmöglich schon vorher im Taschentuch gewesen sein. Das ließ nur den Schluss
-zu, dass dieser in seinem Kopf gesteckt hatte. Doch wie kam er da hin und was machte er da?  
+Sofort blieb er stehen. Neugier hatte ihn gepackt.  
+Sorgfältig betrachtete er seinen Auswurf und was darin eingebettet war. Das kleine kleine Quadrat hatte
+zu allen vier Seiten kleine silbrig glänzende Beinchen, von denen sich feine blutige Schlieren durch den
+klaren Rotz zogen. Es war zweifelsohne ein Mikrochip.  
+Wo kam dieser her? Der konnte unmöglich schon vorher im Taschentuch gewesen sein. Das ließ nur den
+Schluss zu, dass dieser in seinem Kopf gesteckt hatte. Doch wie kam er da hin und was machte er da?  
 Seine Gedanken drehten sich immer noch im Kreis als er unsanft von hinten angerempelt wurde.
 </div>
 
