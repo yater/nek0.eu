@@ -257,12 +257,16 @@ h2 {
 	/* adjust line height */
 	line-height: 190%;
 	/* margin */
-	margin: 20px;
+	margin: 30px;
 	/* padding */
-	padding: 30px;
-	padding-left: 80px;
+	padding: 50px;
 	/* limit width */
 	max-width: 700px;
+}
+
+.with-initial {
+	/* extend left padding to fit the initial in */
+	padding-left: 80px;
 }
 
 .with-initial > p:first-child {
