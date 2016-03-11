@@ -4,3 +4,17 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Inknut Antiqua';
+	src: url('/font/InknutAntiqua-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apex lake';
+	src: url('/font/Apex Lake Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

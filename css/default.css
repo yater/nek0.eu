@@ -242,6 +242,37 @@ h2 {
 	fill: currentColor;
 }
 
+.scripture {
+	/*change font*/
+	font-family: 'Inknut Antiqua';
+	color: black;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	/*box shadow*/
+	box-shadow: 5px 5px 10px #a1a1a1;
+	/*bg-colour*/
+	background-color: #faf5eb;
+	/*adjust line height*/
+	line-height: 190%;
+	/*margin*/
+	margin: 20px;
+	/*padding*/
+	padding: 30px;
+	/*limit width*/
+	max-width: 700px;
+}
+
+.with-initial > p:first-child::first-letter {
+	font-family: 'Apex Lake';
+	color: black;
+	font-size: 50px;
+	font-weight: normal;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
 @media screen and (max-width: 600px){
 	nav{
 		position: relative;
