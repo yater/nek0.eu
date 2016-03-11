@@ -266,7 +266,7 @@ h2 {
 
 .with-initial {
 	/* extend left padding to fit the initial in */
-	padding-left: 80px;
+	padding-left: 100px;
 }
 
 .with-initial > p:first-child {
