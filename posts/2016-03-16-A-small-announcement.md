@@ -8,7 +8,7 @@ description: A new domain name is here!
 Hi again, this time in english. I have a small announcement to make.
 
 Recently I obtained a new domain name for this blog, which is [nek0.cat](https://nek0.cat). Some people
-already know this, but it was not public knowledge. Now it is.
+already know this, but it was not public knowledge. I almost forgot to mention it.
 
 This also means, that my subdomains of nek0.eu, like my gallery eidolon and the comment system yacs are
 also available under the new domain name as [eidolon.nek0.cat](https://eidolon.nek0.cat) and
