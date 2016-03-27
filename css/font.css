@@ -7,21 +7,14 @@
 
 @font-face {
 	font-family: 'Inknut Antiqua';
-	src: url('/font/InknutAntiqua-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Apex Lake';
-	src: url('/font/Apex Lake Regular.ttf') format('truetype');
+	src: url('/font/InknutAntiquaRegular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Maximilian Antiqua Initialen';
-	src: url('/font/Maximilian Antiqua Initialen.ttf') format('truetype');
+	src: url('/font/MaximilianAntiquaInitialen.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

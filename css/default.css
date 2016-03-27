@@ -275,7 +275,6 @@ h2 {
 }
 
 .with-initial > p:first-child::first-letter {
-	/*font-family: 'Apex Lake';*/
 	font-family: 'Maximilian Antiqua Initialen';
 	color: black;
 	font-size: 70px;
