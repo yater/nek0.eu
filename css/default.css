@@ -264,23 +264,16 @@ h2 {
 	max-width: 700px;
 }
 
-.with-initial {
-	/* extend left padding to fit the initial in */
-	padding-left: 100px;
-}
-
-.with-initial > p:first-child {
-	/* move first letter into padding */
-	text-indent: -50px;
-}
-
 .with-initial > p:first-child::first-letter {
 	font-family: 'Maximilian Antiqua Initialen';
 	color: black;
-	font-size: 70px;
+	font-size: 65px;
 	font-weight: normal;
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
+	float: left;
+	margin-top: 0.1ex;
+	margin-right: 5px;
 }
 
 @media screen and (max-width: 600px){
