@@ -84,7 +84,7 @@ main = do
                   listField "posts" (postCtx tags) (return posts) <>
                   baseCtx
         makeItem ""
-          >>= loadAndApplyTemplate "templates/posts.html" ctx
+          >>= loadAndApplyTemplate "templates/post-list.html" ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= relativizeUrls
 
