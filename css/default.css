@@ -76,12 +76,12 @@ article li {
 	margin-left: 1.5ex;
 }
 
-nav {
+.sidebar {
 	position: fixed;
 	width: 200px;
 }
 
-.navigation, .tagcloud {
+.navigation, .tagcloud, .plugs {
 	background-color: rgba(0,0,0,0.1);
 	background: rgba(0,0,0,0.1);
 	border-radius: 5px;
@@ -89,9 +89,11 @@ nav {
 	border-bottom-left-radius: 0px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 16px;
 }
 
-.tagcloud {
+.tagcloud, .plugs {
 	text-align: right;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -101,15 +103,7 @@ nav {
 	padding-right: 10px;
 }
 
-/*nav .tagcloud a:visited {
-	color:darkgreen;
-}
-
-nav .tagcloud a:link {
-	color:green;
-}*/
-
-nav ul{
+nav ul, .plugs ul {
 	text-align:right;
 	list-style: none;
 	margin-left: 0px;
@@ -126,6 +120,25 @@ nav li a:link {
 
 nav li a:visited {
 	color: darkgreen;
+}
+
+.plugs ul {
+	padding: 0;
+	margin: 0;
+}
+
+.plugs li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.plugs li a {
+	display: inline-block;
+}
+
+.plugs svg {
+	width: 40px;
+	height: 40px;
 }
 
 footer {
