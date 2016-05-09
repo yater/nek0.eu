@@ -1,9 +1,8 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
 import           Hakyll
-import           Data.Monoid     ((<>), mconcat)
-import           Data.List (sort, delete, intercalate)
+import           Data.Monoid     ((<>))
+import           Data.List (sort, delete)
 import           System.Directory
 import           Network.HTTP.Base (urlEncode)
 
