@@ -26,3 +26,4 @@ executable blog
   build-depends:       base
                      , hakyll
                      , directory
+                     , HTTP

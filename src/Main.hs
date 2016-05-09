@@ -5,6 +5,7 @@ import           Hakyll
 import           Data.Monoid     ((<>), mconcat)
 import           Data.List (sort, delete, intercalate)
 import           System.Directory
+import           Network.HTTP.Base (urlEncode)
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -65,12 +66,15 @@ main = do
     paginateRules pages $ \num _ -> do
       route $ setExtension "html"
       compile $ do
-        let ident = paginateMakeId pages $ num
+        ident <- getUnderlying
         tagList <- getTags ident
         let tagString = intercalate "," tagList
+        meta <- getMetadata ident
+        title <- getMetadataField' ident "title"
+        let url = toFilePath ident
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
-        let ctx = (postCtx tags) <> pageCtx <> flattrCtx tagString
+        let ctx = (postCtx tags) <> pageCtx <> flattrCtx tagString (urlEncode title) (urlEncode $ "htps://nek0.eu" ++ url)
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
         loadAndApplyTemplate "templates/default.html" baseCtx full
@@ -142,9 +146,11 @@ feedCtx = mconcat
 
 --------------------------------------------------------------------------------
 
-flattrCtx :: String -> Context String
-flattrCtx str = mconcat
-  [ constField "rawtags" str
+flattrCtx :: String -> String -> String -> Context String
+flattrCtx tag tit url = mconcat
+  [ constField "rawtags" tag
+  , constField "enctitle" tit
+  , constField "encurl" url
   ]
 
 --------------------------------------------------------------------------------
