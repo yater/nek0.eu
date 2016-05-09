@@ -66,14 +66,11 @@ main = do
       route $ setExtension "html"
       compile $ do
         ident <- getUnderlying
-        tagList <- getTags ident
-        let tagString = intercalate "," tagList
-        meta <- getMetadata ident
         title <- getMetadataField' ident "title"
         let url = toFilePath ident
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
-        let ctx = (postCtx tags) <> pageCtx <> flattrCtx tagString (urlEncode title) (urlEncode $ "htps://nek0.eu/" ++ url)
+        let ctx = (postCtx tags) <> pageCtx <> flattrCtx (urlEncode title) (urlEncode $ "htps://nek0.eu/" ++ url)
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
         loadAndApplyTemplate "templates/default.html" baseCtx full
@@ -145,10 +142,9 @@ feedCtx = mconcat
 
 --------------------------------------------------------------------------------
 
-flattrCtx :: String -> String -> String -> Context String
-flattrCtx tag tit url = mconcat
-  [ constField "rawtags" tag
-  , constField "enctitle" tit
+flattrCtx :: String -> String -> Context String
+flattrCtx tit url = mconcat
+  [ constField "enctitle" tit
   , constField "encurl" url
   ]
 
