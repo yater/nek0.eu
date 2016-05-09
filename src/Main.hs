@@ -70,7 +70,7 @@ main = do
         let url = toFilePath ident
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
-        let ctx = (postCtx tags) <> pageCtx <> flattrCtx (urlEncode title) (urlEncode $ "htps://nek0.eu/" ++ url)
+        let ctx = (postCtx tags) <> pageCtx <> flattrCtx (urlEncode title) (urlEncode $ "https://nek0.eu/" ++ url)
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
         loadAndApplyTemplate "templates/default.html" baseCtx full
