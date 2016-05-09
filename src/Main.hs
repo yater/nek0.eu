@@ -3,7 +3,7 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 import           Data.Monoid     ((<>), mconcat)
-import           Data.List (sort, delete)
+import           Data.List (sort, delete, intercalate)
 import           System.Directory
 
 --------------------------------------------------------------------------------
@@ -65,9 +65,12 @@ main = do
     paginateRules pages $ \num _ -> do
       route $ setExtension "html"
       compile $ do
+        let ident = paginateMakeId pages $ num
+        tagList <- getTags ident
+        let tagString = intercalate "," tagList
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
-        let ctx = (postCtx tags) <> pageCtx
+        let ctx = (postCtx tags) <> pageCtx <> flattrCtx tagString
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
         loadAndApplyTemplate "templates/default.html" baseCtx full
@@ -135,6 +138,13 @@ feedCtx :: Context String
 feedCtx = mconcat
   [ bodyField "description"
   , defaultContext
+  ]
+
+--------------------------------------------------------------------------------
+
+flattrCtx :: String -> Context String
+flattrCtx str = mconcat
+  [ constField "rawtags" str
   ]
 
 --------------------------------------------------------------------------------
