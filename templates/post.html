@@ -23,25 +23,3 @@ $body$
 
 <object id="yacs" seamless data="https://yacs.nek0.eu/comments/$title$"><p>If you see this, something is wrong</p></object>
 <script src="https://yacs.nek0.eu/static/js/yacs.js"></script>
-
-<!--
-<script type="text/javascript">
-	var slice = Array.prototype.slice;
-	document.addEventListener("DOMContentLoaded", function () {
-		slice.call(document.getElementsByTagName("object")).forEach(function (obj) {
-			var src = obj.getAttribute("data");
-			var request = new XMLHttpRequest();
-			request.onload = function () {
-				window.foo = this.responseXML;
-				slice.call(this.responseXML.body.children).forEach(function (child) {
-					obj.parentNode.insertBefore(child);
-				});
-				obj.remove();
-			};
-			request.open("GET", src);
-			request.responseType = "document";
-			request.send();
-		});
-	});
-</script>
--->
