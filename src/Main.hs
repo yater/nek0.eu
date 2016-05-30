@@ -70,7 +70,9 @@ main = do
         let url = toFilePath ident
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
-        let ctx = (postCtx tags) <> pageCtx <> flattrCtx (urlEncode title) (urlEncode $ "https://nek0.eu/" ++ url)
+        let flattrCtx = constField "enctitle" (urlEncode title) <>
+                        constField "encurl"   (urlEncode $ "https://nek0.eu/" ++ url)
+        let ctx = (postCtx tags) <> pageCtx <> flattrCtx
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
         loadAndApplyTemplate "templates/default.html" baseCtx full
@@ -138,14 +140,6 @@ feedCtx :: Context String
 feedCtx = mconcat
   [ bodyField "description"
   , defaultContext
-  ]
-
---------------------------------------------------------------------------------
-
-flattrCtx :: String -> String -> Context String
-flattrCtx tit url = mconcat
-  [ constField "enctitle" tit
-  , constField "encurl" url
   ]
 
 --------------------------------------------------------------------------------
