@@ -27,3 +27,5 @@ executable blog
                      , hakyll
                      , directory
                      , HTTP
+                     , unix
+                     , filepath

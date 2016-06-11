@@ -5,6 +5,7 @@ import           Data.Monoid     ((<>))
 import           Data.List (sort, delete)
 import           System.Directory
 import           Network.HTTP.Base (urlEncode)
+import           Data.Maybe (fromMaybe)
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -67,7 +68,7 @@ main = do
       compile $ do
         ident <- getUnderlying
         title <- getMetadataField' ident "title"
-        let url = toFilePath ident
+        url <- return . fromMaybe "" =<< getRoute ident
         compiled <- getResourceBody >>= renderPandoc
         let pageCtx = paginateContext pages num
         let flattrCtx = constField "enctitle" (urlEncode title) <>
