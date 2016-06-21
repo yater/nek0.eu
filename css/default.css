@@ -51,6 +51,7 @@ article {
 	padding: 20px;
 	margin-left: 200px;
 	overflow: auto;
+	max-width: 100ex;
 }
 
 article a:hover{
