@@ -72,4 +72,4 @@ esac
 ```
 I hope this is helpful for others. If something is unclear, you can always leave a comment now ^^
 
-[systemd]:https://nek0.eu/posts/2015-08-28-Damonize-a-Yesod-application-systemd-style.html
+[systemd]:https://nek0.eu/posts/2015-08-28-Daemonize-a-Yesod-application-systemd-style.html
