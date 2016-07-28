@@ -29,4 +29,4 @@ don't have to clutter your code with `foreign import ccall` declarations.
 For limiting your cases I recommend using a sum type as a function argument. A sum type is a type which
 has multiple constructors. You can have a constructor for each case you need to interface and distinguish
 between them using Haskell's pattern matching. You can see an example on how to make all this
-[in my bindings](https://github.com/nek0/gegl/blob/master/src/GEGL/FFI/Node.hs).
+[in my bindings](https://github.com/nek0/gegl/blob/a393f8651c1c00a42e24ee475e39089b66488e4c/src/GEGL/FFI/Node.hs).
