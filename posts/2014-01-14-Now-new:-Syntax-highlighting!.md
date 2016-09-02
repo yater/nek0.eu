@@ -1,5 +1,5 @@
 ---
-title: Now new: Syntax highlighting!
+title: "Now new: Syntax highlighting!"
 author: nek0
 tags: meta, programming, english, meta 
 description: Syntax highlighting in code bubbles is the new feature.
