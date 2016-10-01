@@ -15,8 +15,8 @@ Sorry about disappointing you at this point, but there is not much to say about
 me and even less I want to disclose.
 
 The name I identify with is nek0. This is of course a nickname. I live in
-Central Europe as a university student and in my free time I like to code, play
-piano, sing and read books. I have a very broad taste in music and a great deal
+Central Europe as a random dude. In my free time I like to code, play piano,
+sing and read books. I have a very broad taste in music and a great deal
 of understanding.
 
 ###About this site
