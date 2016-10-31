@@ -310,11 +310,17 @@ h2 {
 }
 
 @media screen and (max-width: 600px){
-	nav{
+	.sidebar{
 		position: relative;
 		width: auto;
 		height: auto;
 		text-align: center;
+	}
+	.navigation{
+		border-radius: 5px;
+	}
+	.plugs, .tagcloud{
+		display: none;
 	}
 	nav ul{
 		text-align: center;
