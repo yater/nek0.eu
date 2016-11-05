@@ -19,9 +19,16 @@ main = do
     match "templates/*" $ compile templateCompiler
 
     --copy fonts, images etc.
-    match ("font/*" .||. "images/*" .||. "humans.txt" .||. "D7665688.txt" .||. "robots.txt")  $ do
-      route   idRoute
-      compile copyFileCompiler
+    match
+      (    "font/*"
+      .||. "images/*"
+      .||. "humans.txt"
+      .||. "D7665688.txt"
+      .||. "robots.txt"
+      .||. "keybase.txt"
+      ) $ do
+        route   idRoute
+        compile copyFileCompiler
 
     match "css/*" $ do
       route   idRoute
