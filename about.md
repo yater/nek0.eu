@@ -3,23 +3,20 @@ title: About
 author: nek0
 ---
 
-##Hi there!
+#Hi there!
 
 You found your way to my little spot in the internet and you want to know more.
 
 So be it!
 
-###About me
-
-Sorry about disappointing you at this point, but there is not much to say about
-me and even less I want to disclose.
+##About me
 
 The name I identify with is nek0. This is of course a nickname. I live in
 Central Europe as a random dude. In my free time I like to code, play piano,
 sing and read books. I have a very broad taste in music and a great deal
 of understanding.
 
-###About this site
+##About this site
 
 <img alt="Haskell logo" src="/images/haskell-logo.png" style="width:auto">
 This site came to existence as a byproduct of an experiment. I am trying to
@@ -34,7 +31,7 @@ As you can see I have been successful so far.
 Due to this experimental state it is very likely that the appearance of this
 site will change over time.
 
-####Technical data
+###Technical data
 
 * Webserver: [nginx](https://www.nginx.com/)
 * Certificate authority: [letsencrypt](https://letsencrypt.org/)
