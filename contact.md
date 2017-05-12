@@ -9,5 +9,5 @@ I will gladly reply to your mails as soon as possible.
 Furthermore You can contact me via [Jabber/XMPP][jabber] at the address
 **nek0@jabber.chelnok.de**.
 
-[key]: /D7665688.txt
+[key]: /94A943E0.asc
 [jabber]: https://en.wikipedia.org/wiki/XMPP

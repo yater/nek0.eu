@@ -23,7 +23,7 @@ main = do
       (    "font/*"
       .||. "images/*"
       .||. "humans.txt"
-      .||. "D7665688.txt"
+      .||. "94A943E0.asc"
       .||. "robots.txt"
       .||. "keybase.txt"
       ) $ do
