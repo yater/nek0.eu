@@ -1,18 +1,19 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Hakyll
-import           Data.Monoid     ((<>))
-import           Data.List (sort, delete)
-import           System.Directory
-import           Network.HTTP.Base (urlEncode)
-import           Data.Maybe (fromMaybe)
+import Hakyll
+import Data.Monoid       ((<>))
+import Data.List
+import Data.Maybe        (fromMaybe)
+import Data.Time.Format  (parseTimeM, defaultTimeLocale)
+import Data.Time.Clock   (UTCTime)
+import System.FilePath   (takeFileName)
+import Network.HTTP.Base (urlEncode)
+import Control.Monad     (liftM)
+
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = do
-
-  fs <- getDirectoryContents "./posts"
-  is <- return $ map (fromFilePath . ("posts/" ++)) $ sort $ delete "." $ delete ".." fs
+main =
 
   hakyllWith config $ do
 
@@ -65,8 +66,10 @@ main = do
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" baseCtx
 
+    is <- sortIdentifiersByDate <$> getMatches "posts/*.md"
+
     pages <- buildPaginateWith
-      (return . map return . sort)
+      (liftM (paginateEvery 1) . sortRecentFirst)
       "posts/*.md"
       (\n -> is !! (n - 1))
 
@@ -130,6 +133,21 @@ main = do
         loadAllSnapshots "posts/*" "content"
           >>= fmap (take 10) . recentFirst
           >>= renderRss feedConf feedCtx
+
+--------------------------------------------------------------------------------
+
+sortIdentifiersByDate :: [Identifier] -> [Identifier]
+sortIdentifiersByDate =
+    sortBy byDate
+  where
+    byDate id1 id2 =
+      let fn1 = takeFileName $ toFilePath id1
+          fn2 = takeFileName $ toFilePath id2
+          parseTime' fn = parseTimeM True defaultTimeLocale "%Y-%m-%d" $
+            intercalate "-" $ take 3 $ splitAll "-" fn
+      in compare
+           (parseTime' fn1 :: Maybe UTCTime)
+           (parseTime' fn2 :: Maybe UTCTime)
 
 --------------------------------------------------------------------------------
 
