@@ -288,13 +288,17 @@ h2 {
 	/* bg-colour */
 	background-color: #faf5eb;
 	/* adjust line height */
-	line-height: 190%;
+	line-height: 200%;
 	/* margin */
 	margin: 30px;
 	/* padding */
 	padding: 50px;
 	/* limit width */
 	max-width: 700px;
+}
+
+.scripture p {
+	margin-top: 25px;
 }
 
 .with-initial > p:first-child::first-letter {
