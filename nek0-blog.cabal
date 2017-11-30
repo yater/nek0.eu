@@ -24,7 +24,7 @@ executable blog
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base
-                     , hakyll
+                     , hakyll >= 4.9.8.0
                      , directory
                      , HTTP
                      , time
