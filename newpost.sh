@@ -26,7 +26,7 @@ function main {
 		confirmation
 		read conf
 	done
-	postname="./posts/$date-${title// /-}.md"
+	postname="./site/posts/$date-${title// /-}.md"
 	echo -e "---\ntitle: ${title}\nauthor: ${author}\ntags: \ndescription: \n---" >> $postname
 	vim $postname
 }
