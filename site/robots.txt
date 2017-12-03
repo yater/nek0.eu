@@ -1,3 +1,4 @@
 User-agent: *
+Sitemap: https://nek0.eu/sitemap.xml
 Disallow: /imprint.html
 Disallow: /contact.html

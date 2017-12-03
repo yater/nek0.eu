@@ -138,6 +138,24 @@ main =
           >>= fmap (take 10) . recentFirst
           >>= renderRss feedConf feedCtx
 
+    create ["sitemap.xml"] $ do
+      route idRoute
+      compile $ do
+        rposts <- loadAll "site/**/*.md"
+        rsites <- loadAll "site/*.md"
+        -- rtxts <- loadAll "site/*.txt"
+        -- rascs <- loadAll "site/*.asc"
+        let sites = return (rposts ++ rsites)
+        let sitemapCtx = mconcat
+              [ listField "entries"
+                  (postCtx tags <> constField "host" "https://nek0.eu/")
+                  sites
+              , constField "host" "https://nek0.eu/"
+              , defaultContext
+              ]
+        makeItem ""
+          >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
+
 --------------------------------------------------------------------------------
 
 sortIdentifiersByDate :: [Identifier] -> [Identifier]
