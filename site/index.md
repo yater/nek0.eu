@@ -5,7 +5,7 @@ title: Home
 ## Welcome
 
 
-<img src="/images/nekonet.svg" style="height: 250px; width: auto;"/>
+<img alt="cat face grinning with smiling eyes" src="/images/nekonet.svg" style="height: 250px; width: auto;"/>
 
 Welcome to my blog!
 
