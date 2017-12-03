@@ -1,9 +1,9 @@
 ---
 title: Home
-description: A mutlilinugal blog about technical stuff, writing and other musings
+description: "A mutlilinugal blog about everything I spend my time with: technical stuff, writing and other musings."
 ---
 
-## Welcome
+## Welcome to my blog
 
 
 <img title="cat face" alt="cat face grinning with smiling eyes" src="/images/nekonet.svg" style="height: 250px; width: auto;"/>

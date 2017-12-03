@@ -45,7 +45,7 @@ main =
     match "site/index.md" $ do
       route $ myRoute `composeRoutes` setExtension "html"
       compile $ do
-        posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
+        posts <- fmap (take 5) . recentFirst =<< loadAll "site/posts/*"
         let indexCtx = listField "posts" (postCtx tags) (return posts) <>
                        constField "title" "Home" <>
                        defaultContext
@@ -53,7 +53,7 @@ main =
           >>= applyAsTemplate indexCtx
           >>= renderPandoc
           >>= loadAndApplyTemplate "templates/default.html" baseCtx
-          >>= relativizeUrls
+          -- >>= relativizeUrls
 
     match (fromList
       [ "site/about.md"
@@ -63,7 +63,7 @@ main =
         route   $ myRoute `composeRoutes` setExtension "html"
         compile $ pandocCompiler
           >>= loadAndApplyTemplate "templates/default.html" baseCtx
-          >>= relativizeUrls
+          -- >>= relativizeUrls
 
     match "site/404.md" $ do
       route   $ myRoute `composeRoutes` setExtension "html"
@@ -118,7 +118,7 @@ main =
         makeItem ""
           >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
           >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-          >>= relativizeUrls
+          -- >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
 
@@ -205,7 +205,7 @@ feedConf = FeedConfiguration
 
 config :: Configuration
 config = defaultConfiguration
-  { deployCommand = "rsync --del --checksum -ave 'ssh -p 5555' \\_site/* nek0@chelnok.de:/home/nek0/www/blog"
+  { deployCommand = "rsync --del --checksum -ave 'ssh -p 5555' \\_site/* nek0@chelnok.de:/home/nek0/www/blog-seo"
   }
 
 --------------------------------------------------------------------------------
