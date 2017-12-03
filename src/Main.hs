@@ -160,7 +160,7 @@ main =
 
 sortIdentifiersByDate :: [Identifier] -> [Identifier]
 sortIdentifiersByDate =
-    sortBy byDate
+   sortBy byDate
   where
     byDate id1 id2 =
       let fn1 = takeFileName $ toFilePath id1
