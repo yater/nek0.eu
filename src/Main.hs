@@ -21,28 +21,28 @@ main =
 
     --copy fonts, images etc.
     match
-      (    "font/*"
-      .||. "images/*"
-      .||. "humans.txt"
-      .||. "94A943E0.asc"
-      .||. "robots.txt"
-      .||. "keybase.txt"
+      (    "site/font/*"
+      .||. "site/images/*"
+      .||. "site/humans.txt"
+      .||. "site/94A943E0.asc"
+      .||. "site/robots.txt"
+      .||. "site/keybase.txt"
       ) $ do
-        route   idRoute
+        route   myRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
-      route   idRoute
+    match "site/css/*" $ do
+      route   myRoute
       compile compressCssCompiler
 
     -- Build tags
-    tags <- buildTags "posts/*.md" (fromCapture "tags/*.html")
+    tags <- buildTags "site/posts/*.md" (fromCapture "tags/*.html")
 
     --build tagcloud
     let baseCtx = tagCloudField "tagcloud" 80.0 200.0 tags <>
                 defaultContext
 
-    match "index.md" $ do
+    match "site/index.md" $ do
       route $ setExtension "html"
       compile $ do
         posts <- fmap (take 5) . recentFirst =<< loadAll "posts/*"
@@ -55,26 +55,30 @@ main =
           >>= loadAndApplyTemplate "templates/default.html" baseCtx
           >>= relativizeUrls
 
-    match (fromList ["about.md", "imprint.md", "contact.md"]) $ do
-      route   $ setExtension "html"
+    match (fromList
+      [ "site/about.md"
+      , "site/imprint.md"
+      , "site/contact.md"
+      ]) $ do
+        route   $ myRoute `composeRoutes` setExtension "html"
+        compile $ pandocCompiler
+          >>= loadAndApplyTemplate "templates/default.html" baseCtx
+          >>= relativizeUrls
+
+    match "site/404.md" $ do
+      route   $ myRoute `composeRoutes` setExtension "html"
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" baseCtx
-        >>= relativizeUrls
 
-    match "404.md" $ do
-      route   $ setExtension "html"
-      compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/default.html" baseCtx
-
-    is <- sortIdentifiersByDate <$> getMatches "posts/*.md"
+    is <- sortIdentifiersByDate <$> getMatches "site/posts/*.md"
 
     pages <- buildPaginateWith
       (liftM (paginateEvery 1) . sortRecentFirst)
-      "posts/*.md"
+      "site/posts/*.md"
       (\n -> is !! (n - 1))
 
     paginateRules pages $ \num _ -> do
-      route $ setExtension "html"
+      route $ myRoute `composeRoutes` setExtension "html"
       compile $ do
         ident <- getUnderlying
         title <- getMetadataField' ident "title"
@@ -93,7 +97,7 @@ main =
     tagsRules tags $ \tag pattern -> do
       let title = "Posts tagged " ++ tag ++ ":"
       -- Copied from posts, need to refactor
-      route idRoute
+      route myRoute
       compile $ do
         posts <- recentFirst =<< loadAll pattern
         let ctx = constField "title" title <>
@@ -107,7 +111,7 @@ main =
     create ["archive.html"] $ do
       route idRoute
       compile $ do
-        posts <- recentFirst =<< loadAll "posts/*"
+        posts <- recentFirst =<< loadAll "site/posts/*"
         let archiveCtx = listField "posts" (postCtx tags) (return posts) <>
                          constField "title" "Archives" <>
                          baseCtx
@@ -185,3 +189,8 @@ config :: Configuration
 config = defaultConfiguration
   { deployCommand = "rsync --del --checksum -ave 'ssh -p 5555' \\_site/* nek0@chelnok.de:/home/nek0/www/blog"
   }
+
+--------------------------------------------------------------------------------
+
+myRoute :: Routes
+myRoute = gsubRoute "site/" (const "")
