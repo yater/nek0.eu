@@ -1,5 +1,6 @@
 ---
 title: Home
+description: A mutlilinugal blog about technical stuff, writing and other musings
 ---
 
 ## Welcome
