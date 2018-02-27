@@ -1,5 +1,5 @@
 ---
-title: Devlog: Making a game
+title: "Devlog: Making a game"
 author: nek0
 tags: english, programming, devlog
 description: What I've been up to in the past month
@@ -31,7 +31,7 @@ month or so figuring out, how to procedurally generate sane floors for the
 building and how to use the entity-component-system. So far, the whole thing
 looks like this:
 
-![Preview](images/2018-02-27_preview.png)
+![](/images/2018-02-27_preview.png)
 
 Pretty neat, isn't it?
 
