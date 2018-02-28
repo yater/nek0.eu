@@ -127,14 +127,14 @@ main =
     create ["atom.xml"] $ do
       route idRoute
       compile $ do
-        loadAllSnapshots "posts/*" "content"
+        loadAllSnapshots "site/posts/*.md" "content"
           >>= fmap (take 10) . recentFirst
           >>= renderAtom feedConf feedCtx
 
     create ["rss.xml"] $ do
       route idRoute
       compile $ do
-        loadAllSnapshots "posts/*" "content"
+        loadAllSnapshots "site/posts/*.md" "content"
           >>= fmap (take 10) . recentFirst
           >>= renderRss feedConf feedCtx
 
