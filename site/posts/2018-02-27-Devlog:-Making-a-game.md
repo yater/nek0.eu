@@ -36,3 +36,9 @@ looks like this:
 Pretty neat, isn't it?
 
 That's all for now. See you soon!
+
+PS:
+
+I totally forgot to tell you, where you can find the code for my game. It is
+hosted on my [Github profile](https://github.com/nek0/tracer). Have fun reading
+it.
