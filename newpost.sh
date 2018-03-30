@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 date=$(date --rfc-3339=date)
 title=
