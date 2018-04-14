@@ -1,7 +1,7 @@
 ---
 title: "Devlog: Progress with \"Tracer\""
 author: nek0
-tags: english programming devlog
+tags: english, programming, devlog
 description: The progress of nearly a month
 ---
 
