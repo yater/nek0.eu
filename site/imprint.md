@@ -76,7 +76,7 @@ Telefon:
 
 E-Mail: <nek0@nek0.eu>
 
-###Arten der Verarbeiteten Daten
+### Arten der Verarbeiteten Daten
 
 * Bestandsdaten und Kontaktdaten (Namen/Pseudonyme)
 * Inhaltsdaten (Texteingaben)
