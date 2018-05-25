@@ -100,7 +100,6 @@ Files, die Ihr Browser automatisch an mich übermittelt. Dies sind:
 * Browsertyp/ Browserversion
 * verwendetes Betriebssystem
 * Referrer URL
-* Hostname des zugreifenden Rechners
 * Uhrzeit der Serveranfrage
 
 Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung
