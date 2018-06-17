@@ -116,7 +116,7 @@ Sie haben das Recht auf eine Auskunft der bei mir gespeicherten
 personenbezogenen Daten anzufordern und/oder eine Berechtigung, Sperrung oder
 Löschung zu verlangen.
 
-EIne Sperrung oder Löschung kann nciht erfolgen, wenn gesetzliche Regelungen dem
+Eine Sperrung oder Löschung kann nicht erfolgen, wenn gesetzliche Regelungen dem
 entgegenstehen.
 
 ### Kontaktaufnahme
