@@ -23,6 +23,7 @@ main =
     match
       (    "site/font/*"
       .||. "site/images/*"
+      .||. "site/vids/*"
       .||. "site/humans.txt"
       .||. "site/94A943E0.asc"
       .||. "site/robots.txt"
