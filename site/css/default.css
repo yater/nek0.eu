@@ -18,7 +18,7 @@ a:visited {
 	color: darkgreen;
 }
 
-img {
+img, video {
 	margin: 10px;
 	width: 66%;
 	max-width: 500px;
