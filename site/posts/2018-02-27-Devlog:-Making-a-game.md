@@ -1,7 +1,10 @@
 ---
 title: "Devlog: Making a game"
 author: nek0
-tags: english, programming, devlog
+tags:
+- english
+- programming
+- "devlog: tracer"
 description: What I've been up to in the past month
 ---
 
