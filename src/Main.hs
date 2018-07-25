@@ -40,7 +40,7 @@ main =
     tags <- buildTags "site/posts/*.md" (fromCapture "tags/*.html")
 
     --build tagcloud
-    let baseCtx = tagCloudField "tagcloud" 80.0 200.0 tags <>
+    let baseCtx = tagCloudField "tags" 100 100 tags <>
                 defaultContext
 
     match "site/index.md" $ do
