@@ -116,6 +116,10 @@ article li {
 	padding-left: 20px;
 }
 
+.tags p {
+	text-align: left;
+}
+
 .navigation {	
 	padding-right: 10px;
 	display: flex;
