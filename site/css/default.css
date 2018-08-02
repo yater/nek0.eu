@@ -159,6 +159,7 @@ nav li a:visited {
 
 .plugs li a {
 	display: inline-block;
+	padding-top: 5px;
 }
 
 .plugs svg {
@@ -272,22 +273,24 @@ h2 {
 	flex-direction: column;
 }
 
-.tags a {
+.sidebar a {
 	display: inline-block;
-	margin-right: 1.5ex;
 	padding: 0 5px 0;
 	transition: 0.5s;
 }
 
-.tags a:hover {
+.sidebar a:hover {
 	background-color: white;
 	border-radius: 5px;
 	transition: 0.5s;
 }
 
+.tags a {
+	margin-right: 1.5ex;
+}
+
 .tags a:before {
 	display: inline-block;
-	fill: darkgreen;
 	width: 2ex;
 	height: 2ex;
 	content: "";
