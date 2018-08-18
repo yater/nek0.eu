@@ -50,7 +50,7 @@ article {
 	padding: 20px;
 	margin-left: 300px;
 	overflow: auto;
-	max-width: 100ex;
+	max-width: 80em;
 }
 
 article a:hover{
@@ -324,8 +324,6 @@ h2 {
 	margin: 30px;
 	/* padding */
 	padding: 50px;
-	/* limit width */
-	max-width: 700px;
 }
 
 .scripture p {
@@ -342,6 +340,10 @@ h2 {
 	float: left;
 	margin-top: 0.1ex;
 	margin-right: 5px;
+}
+
+.postlist {
+	columns: 2;
 }
 
 @media screen and (max-width: 600px){

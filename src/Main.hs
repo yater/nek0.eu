@@ -46,7 +46,7 @@ main =
     match "site/index.md" $ do
       route $ myRoute `composeRoutes` setExtension "html"
       compile $ do
-        posts <- fmap (take 5) . recentFirst =<< loadAll "site/posts/*"
+        posts <- fmap (take 6) . recentFirst =<< loadAll "site/posts/*"
         let indexCtx = listField "posts" (postCtx tags) (return posts) <>
                        constField "title" "Home" <>
                        defaultContext
