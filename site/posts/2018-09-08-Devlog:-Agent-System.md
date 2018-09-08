@@ -1,7 +1,10 @@
 ---
-title: Devlog: Agent System
+title: "Devlog: Agent System"
 author: nek0
-tags: "devlog: tracer", english, programming
+tags:
+- "devlog: tracer"
+- english
+- programming
 description: latest breakthrough in my game
 ---
 
