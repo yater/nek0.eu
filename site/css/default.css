@@ -84,7 +84,7 @@ article li {
 
 .sidebar {
 	position: fixed;
-	width: 300px;
+	width: 17em;
 }
 
 .navigation, .tags, .plugs {
@@ -335,7 +335,7 @@ h2 {
 	columns: 2;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1100px){
 	.sidebar{
 		position: relative;
 		width: auto;
@@ -344,6 +344,7 @@ h2 {
 	}
 	.navigation{
 		border-radius: 5px;
+		columns: auto;
 	}
 	.plugs, .tagcloud{
 		display: none;
