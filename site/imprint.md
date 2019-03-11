@@ -78,8 +78,6 @@ E-Mail: <nek0@nek0.eu>
 
 ### Arten der Verarbeiteten Daten
 
-* Bestandsdaten und Kontaktdaten (Namen/Pseudonyme)
-* Inhaltsdaten (Texteingaben)
 * Nutzungsdaten (z.B.: besuchte Webseiten, Zugriffszeiten)
 * Meta-/Kommunikationsdaten (z.B.: IP-Adressen, Upload-/Änderungszeiten)
 
@@ -108,7 +106,7 @@ keine Daten an Dritte weitergegeben.
 
 Ich behalte mir vor, diese Daten nachträglich zu prüfen, wenn mir konkrete
 Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden. Eine Löschung der
-Daten erfolgt automatisch nach 14 Tagen.
+Daten erfolgt automatisch nach 7 Tagen.
 
 ### Rechte der betroffenen Personen
 
