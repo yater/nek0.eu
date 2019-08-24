@@ -7,7 +7,7 @@ If you have any comments on posts, this site or anything else, feel free to cont
 I will gladly reply to your mails as soon as possible.
 
 Furthermore You can contact me via [Jabber/XMPP][jabber] at the address
-**nek0@jabber.chelnok.de**.
+**nek0@jabber.c3d2.de**.
 
 [key]: /BF5A0B2C42E36B4F.asc
 [jabber]: https://en.wikipedia.org/wiki/XMPP
