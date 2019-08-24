@@ -5,7 +5,7 @@ tags: deutsch
 description: 
 ---
 
-##oder: was im Moment ziemlich schief läuft.
+## oder: was im Moment ziemlich schief läuft.
 
 Zuallererst: Frohe Weihnachten. Es gibt ja Menschen die auf so etwas Wert legen. Ich komme um Weihnachten herum nie wirklich in Feierstimmung, aber das heißt nicht, dass ich die Laune jedem verderben möchte.
 
