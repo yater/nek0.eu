@@ -206,7 +206,7 @@ feedConf = FeedConfiguration
 
 config :: Configuration
 config = defaultConfiguration
-  { deployCommand = "rsync --del --checksum -ave 'ssh -4 -p 5555' \\_site/* nek0@nek0.eu:/home/nek0/blog"
+  { deployCommand = "rsync --del --checksum -ave 'ssh -p 5555' \\_site/* nek0@nek0.eu:/home/nek0/blog"
   }
 
 --------------------------------------------------------------------------------
