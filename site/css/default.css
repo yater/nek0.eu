@@ -270,10 +270,6 @@ h2 {
   transition: 0.5s;
 }
 
-.tags a {
-  margin-right: 1.5ex;
-}
-
 .tags a:before {
   display: inline-block;
   width: 2ex;
