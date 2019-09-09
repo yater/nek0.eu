@@ -338,6 +338,7 @@ h2 {
     height: auto;
     text-align: center;
   }
+
   .navigation{
     border-radius: 5px;
     columns: auto;
@@ -350,20 +351,24 @@ h2 {
   .plugs, .tags{
     display: none;
   }
+
   nav ul{
     text-align: center;
     padding-left: 0;
   }
+
   nav li{
     display: inline-block;
   }
+
   article {
     margin: 0;
   }
+
   img {
-  float: right;
-  margin: 10px;
-  padding-left: 100%;
-  width: 230px;
+    float: right;
+    margin: 10px;
+    padding-left: 100%;
+    width: 230px;
   }
 }
