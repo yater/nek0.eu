@@ -8,6 +8,23 @@ body {
   margin: 0;
 }
 
+body::after {
+  content: "";
+  opacity: 0.33;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(/images/brain.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-clip: content-box;
+  background-position: center;
+}
+
 a{
   text-decoration: none;
 }
