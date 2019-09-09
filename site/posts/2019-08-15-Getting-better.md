@@ -7,11 +7,11 @@ description: I'm getting better, thank you.
 
 Hi folks, long time no see.
 
-Since the middle of June tings gradually change for me. I am in psychiatry
-again, but the outlook is pretty good. I'm geting new medication, which replaces
-the cocktail I formerly got. This means less side effects and this new meds seem
-to be really working. I feel more energetic than I felt for a long time,
-probably years.
+Since the middle of June things gradually change for me. I am in psychiatry
+again, but the outlook is pretty good. I'm getting new medication, which
+replaces the cocktail I formerly got. This means less side effects and this new
+meds seem to be really working. I feel more energetic than I felt for a long
+time, probably years.
 
 I am looking forward to leaving the clinic, yet I still feel anxious about how
 life will go on. I deeply hope the positive effects prevail and I can continue
