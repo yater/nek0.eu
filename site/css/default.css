@@ -342,6 +342,11 @@ h2 {
     border-radius: 5px;
     columns: auto;
   }
+
+  .postlist {
+    columns: 1;
+  }
+
   .plugs, .tags{
     display: none;
   }
