@@ -5,7 +5,17 @@ description: "A mutlilinugal blog about everything I spend my time with: technic
 
 ## Welcome to my blog!
 
-<img title="cat face" alt="cat face grinning with smiling eyes" src="/images/nekonet.svg" style="height: 250px; width: auto;"/>
+<img title="cat face"
+  alt="cat face grinning with smiling eyes"
+  src="/images/nekonet.svg"
+  style="
+    height: 250px;
+    width: auto;
+    background-color: white;
+    border-radius: 20%;
+    padding: 10px;
+  "
+/>
 
 This blog is about everything and anything I want to share with the world.
 
