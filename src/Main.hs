@@ -25,7 +25,7 @@ main =
       .||. "site/images/*"
       .||. "site/vids/*"
       .||. "site/humans.txt"
-      .||. "site/BF5A0B2C42E36B4F.asc"
+      .||. "site/8ADADB98780B5BAF.asc"
       .||. "site/robots.txt"
       .||. "site/keybase.txt"
       ) $ do

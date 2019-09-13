@@ -4,7 +4,7 @@ title: Contact
 
 If you have any comments on posts, this site or anything else, feel free to
 contact me at: **<nek0@nek0.eu>**. My PGP-Key has the ID
-[0xBF5A0B2C42E36B4F][key]. I will gladly reply to your mails as soon as
+[0x8ADADB98780B5BAF][key]. I will gladly reply to your mails as soon as
 possible.
 
 Additionally I more or less sporadically maintain a presence at following
@@ -18,7 +18,7 @@ platforms, so check them out or get in touch:
 Furthermore You can contact me via [Jabber/XMPP][jabber] at the address
 **nek0@jabber.c3d2.de**.
 
-[key]: /BF5A0B2C42E36B4F.asc
+[key]: /8ADADB98780B5BAF.asc
 [jabber]: https://en.wikipedia.org/wiki/XMPP
 
 [mastodon]: https://chaos.social/@nek0
