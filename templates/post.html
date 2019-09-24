@@ -1,12 +1,12 @@
 <div class="info">
-  Posted on <time itemprop="datePublished" datetime="$datetime$">$date$</time>
+  Posted on <time itemprop="datePublished dateModified" datetime="$datetime$">$date$</time>
   $if(author)$
     by <span itemprop="publisher author" itemscope itemtype="http://schema.org/Person">
       <span itemprop="name ">$author$</span>
     </span>
   $endif$
   $if(tags)$
-    in $tags$
+    in <span itemprop="keywords">$tags$</span>
   $endif$
 </div>
 

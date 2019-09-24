@@ -87,11 +87,11 @@
         </div>
       </div>
       $if(datetime)$
-        <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <article itemprop="blogPost mainEntityOfPage" itemscope itemtype="https://schema.org/BlogPosting">
           <h1 itemprop="headline">$title$</h1>
       $else$
-        <article>
-          <h1>$title$</h1>
+        <article itemprop="mainEntityOfPage">
+          <h1 itemprop="headline">$title$</h1>
       $endif$
   
         $body$
