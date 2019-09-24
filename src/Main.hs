@@ -91,8 +91,7 @@ main =
         let ctx = (postCtx tags) <> pageCtx <> flattrCtx
         full <- loadAndApplyTemplate "templates/post.html" ctx compiled
         _ <- saveSnapshot "content" compiled
-        loadAndApplyTemplate "templates/default.html" baseCtx full
-          >>= relativizeUrls
+        loadAndApplyTemplate "templates/default.html" (baseCtx <> ctx) full
 
     -- Post tags
     tagsRules tags $ \tag pattern -> do

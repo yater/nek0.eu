@@ -25,7 +25,7 @@
     <link rel="icon" type="image/x-icon" href="/images/nekonet.ico">
     <!--<script type="text/javascript">document.domain="nek0.eu"</script>-->
   </head>
-  <body class="site">
+  <body itemscope itemtype="https://schema.org/Blog" class="site">
     <div class="wrapper">
       <header>
         <a href="/">Nek0's Blog</a>
@@ -86,8 +86,13 @@
           </ul>
         </div>
       </div>
-      <article>
-        <h1>$title$</h1>
+      $if(datetime)$
+        <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+          <h1 itemprop="headline">$title$</h1>
+      $else$
+        <article>
+          <h1>$title$</h1>
+      $endif$
   
         $body$
       </article>
