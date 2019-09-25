@@ -170,6 +170,10 @@ nav li a:visited {
   height: 40px;
 }
 
+hr {
+  margin: 5px 0 5px;
+}
+
 footer {
   position: relative;
   color: #555;
@@ -178,10 +182,8 @@ footer {
   clear: both;
   left: 0;
   bottom: 0;
-  padding: 20px;
-  padding-top: 0px;
-  padding-bottom: 5px;
-  margin: 0;
+  padding: 0 20px 0;
+  margin: 0 0 5px;
 }
 
 footer ul {
