@@ -1,126 +1,129 @@
 ---
-title: Impressum / Datenschutz
+title: Impressum / Datenschutzerklärung
 ---
 
-Angaben gemäß § 5 TMG:
+# Impressum
+## Diensteanbieter
 
-## Kontakt:
+Amedeo Molnár
 
-Amedeo Molnár  
-Hochschulstraße 20   
-01069 Dresden  
+Hochschulstraße 20
 
-Telefon:  
-0176-77239874
+01069 Dresden
 
-E-Mail: <nek0@nek0.eu>
+Deutschland
 
-## Haftungsausschluss:
+## Kontaktmöglichkeiten
 
-### Haftung für Inhalte
+**E-Mail-Adresse**: amedeo.molnar@nek0.eu
 
-Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die
-Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine
-Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene
-Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
-§§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet,
-übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
-Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach
-den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung
-ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
-möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese
-Inhalte umgehend entfernen.
+**Telefon**: 0176 77239874
 
-### Haftung für Links
+## Journalistisch-redaktionelle Angebote
 
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich
-keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine
-Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
-Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden
-zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine
-permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
-Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
-Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+**Inhaltlich verantwortlich**: Amedeo Molnár (Adresse wie oben)
 
-### Urheberrecht
 
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
-unterliegen dem deutschen Urheberrecht und, soweit nicht anders vermerkt, einer
-Creative-Commons-Lizenz CC BY-SA 4.0 (Namensnennung – Weitergabe unter gleichen
-Bedingungen 4.0). Unter den in der Lizenz angegebenen Bedingungen können Sie
-die lizenzierten Inhalte und Werke vervielfältigen, verbreiten und öffentlich
-zugänglich machen, und Sie können Abwandlungen und Bearbeitungen anfertigen. Zu
-den Nutzungsbedingungen gehören unter anderem die Namensnennung des
-Rechteinhabers und die Weitergabe der Inhalte und Werke bzw. Ihrer
-Abwandlungen davon zu identischen oder vergleichbaren Lizenzbedingungen.
+# Datenschutzerklärung
 
-Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden
-die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als
-solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
-aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden
-von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
+Stand: 25. September 2019
 
-## Datenschutzerklärung
+## Verantwortlicher
 
-Verantwortlicher für die Erhebung, Verarbeitung und Nutzung Ihrer
-personenbezogenen Daten im Sinne von Art. 4 Nr. 7 DSGVO ist:
+Amedeo Molnár
 
-Amedeo Molnár  
-Hochschulstraße 20   
-01069 Dresden  
+Hochschulestraße 20
 
-Telefon:  
-0176-77239874
+01069 Dresden
 
-E-Mail: <nek0@nek0.eu>
+**E-Mail-Adresse**: amedeo.molnar@nek0.eu
 
-### Arten der Verarbeiteten Daten
+**Impressum**: https://nek0.eu/imprint.html
 
-* Nutzungsdaten (z.B.: besuchte Webseiten, Zugriffszeiten)
-* Meta-/Kommunikationsdaten (z.B.: IP-Adressen, Upload-/Änderungszeiten)
+## Übersicht der Verarbeitungen
 
-### Zweck der Verarbeitung
+Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die
+Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.
 
-* Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.
-* Sicherheitsmaßnahmen
+### Arten der verarbeiteten Daten
 
-### Datenvermeidung und Datensparsamkeit
+* Bestandsdaten (z.B. Namen, Adressen).
+* Inhaltsdaten (z.B. Texteingaben, Fotografien, Videos).
+* Kontaktdaten (z.B. E-Mail, Telefonnummern).
+* Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).
+* Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).
 
-Personenbezogene Daten werden nur so lange wie erforderlich gespeichert.
+### Kategorien betroffener Personen
 
-### Erfassung allgemeiner Informationen
+* Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).
 
-Ich erhebe und speichere automatisch Informationen in so genannten Server-Log
-Files, die Ihr Browser automatisch an mich übermittelt. Dies sind:
+### Zwecke der Verarbeitung
 
-* Browsertyp/ Browserversion
-* verwendetes Betriebssystem
-* Referrer URL
-* Uhrzeit der Serveranfrage
+* Feedback (z.B. Sammeln von Feedback via Online-Formular).
+* Vertragliche Leistungen und Service.
 
-Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung
-dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Desweiteren werden
-keine Daten an Dritte weitergegeben.
+## Sicherheitsmaßnahmen
 
-Ich behalte mir vor, diese Daten nachträglich zu prüfen, wenn mir konkrete
-Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden. Eine Löschung der
-Daten erfolgt automatisch nach 7 Tagen.
+Ich treffe nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des
+Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der
+Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen
+Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und
+Freiheiten natürlicher Personen geeignete technische und organisatorische
+Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.
 
-### Rechte der betroffenen Personen
+Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit,
+Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und
+elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der
+Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des
+Weiteren habe ich Verfahren eingerichtet, die eine Wahrnehmung von
+Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der
+Daten gewährleisten. Ferner berücksichtigen ich den Schutz personenbezogener
+Daten bereits bei der Entwicklung bzw. Auswahl von Hardware, Software sowie
+Verfahren entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung
+und durch datenschutzfreundliche Voreinstellungen.
 
-Sie haben das Recht auf eine Auskunft der bei mir gespeicherten
-personenbezogenen Daten anzufordern und/oder eine Berechtigung, Sperrung oder
-Löschung zu verlangen.
+**SSL-Verschlüsselung (https)**: Um Ihre via meinem Online-Angebot übermittelten
+Daten zu schützen, nutze ich eine SSL-Verschlüsselung. Sie erkennen derart
+verschlüsselte Verbindungen an dem Präfix https:// in der Adresszeile Ihres
+Browsers.
 
-Eine Sperrung oder Löschung kann nicht erfolgen, wenn gesetzliche Regelungen dem
-entgegenstehen.
+## Blogs und Publikationsmedien
 
-### Kontaktaufnahme
+Ich nutze Blogs oder vergleichbare Mittel der Onlinekommunikation und
+Publikation (nachfolgend "Publikationsmedium"). Die Daten der Leser werden für
+die Zwecke des Publikationsmediums nur insoweit verarbeitet, als es für dessen
+Darstellung und die Kommunikation zwischen Autoren und Lesern oder aus Gründen
+der Sicherheit erforderlich ist. Im Übrigen verweisen ich auf die Informationen
+zur Verarbeitung der Besucher unseres Publikationsmediums im Rahmen dieser
+Datenschutzhinweise.
 
-Bei der Kontaktaufnahme (z.B. via E-Mail) werden die Angaben des Nutzers zur
-Bearbeitung der Kontakanfrage und deren Abwicklung verarbeitet.
+**Verarbeitete Datenarten**: Bestandsdaten (z.B. Namen, Adressen), Kontaktdaten
+(z.B. E-Mail, Telefonnummern), Inhaltsdaten (z.B. Texteingaben, Fotografien,
+Videos), Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten,
+Zugriffszeiten), Meta-/Kommunikationsdaten (z.B. Geräte-Informationen,
+IP-Adressen).
 
-Die Angaben der Nutzer können, soweit dem nicht ausdrücklich widersprochen wird,
-intern gespeichert werden.
+**Betroffene Personen**: Nutzer (z.B. Webseitenbesucher, Nutzer von
+Onlinediensten).
+
+**Zwecke der Verarbeitung**: Vertragliche Leistungen und Service,
+Feedback (z.B. Sammeln von Feedback via Online-Formular).
+
+**Rechtsgrundlagen**: Vertragserfüllung und vorvertragliche Anfragen
+(Art. 6 Abs. 1 S. 1 lit. b. DSGVO),
+Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
+
+## Änderung und Aktualisierung der Datenschutzerklärung
+
+Ich bitte Sie, sich regelmäßig über den Inhalt unserer Datenschutzerklärung zu
+informieren. Ich passen die Datenschutzerklärung an, sobald die Änderungen der
+von mir durchgeführten Datenverarbeitungen dies erforderlich machen. Ich
+informiere Sie, sobald durch die Änderungen eine Mitwirkungshandlung Ihrerseits
+(z.B. Einwilligung) oder eine sonstige individuelle Benachrichtigung
+erforderlich wird.
+
+<a href="https://datenschutz-generator.de/?l=de"
+title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
+target="_blank">
+  Erstellt mit Datenschutz-Generator.de von Dr. jur. Thomas Schwenke
+</a>
