@@ -5,7 +5,7 @@ tags: deutsch
 description: Die Datenspuren sind vorbei. Hier mein persönlicher Rückblick.
 ---
 
-Wie auch schon in den Vergangenen Jahren, so war ich auch dieses Jahr bei den
+Wie auch schon in den vergangenen Jahren, so war ich auch dieses Jahr bei den
 [Datenspuren](https://datenspuren.de/2019/) des c3d2 dabei. Aufgrund von
 längerfristiger Krankheit bin ich dieses Jahr erst sehr spät zur Orga
 dazugestoßen und habe außer einer Pressemitteilung und deren Verteilen gefühlt
